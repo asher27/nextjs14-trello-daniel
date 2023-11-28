@@ -77,7 +77,7 @@ const ListOptions = ({ data, onAddCard }: ListOptionsProps) => {
                 <div className='text-sm font-medium text-center text-neutral-600 pb-4'>
                     List actions
                 </div>
-                <PopoverClose rel={closeRef} asChild>
+                <PopoverClose ref={closeRef} asChild>
                     <Button
                         variant={'ghost'}
                         className='h-auto w-auto p-2 absolute top-2 right-2 text-neutral-600'
