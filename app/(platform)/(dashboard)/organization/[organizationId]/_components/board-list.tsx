@@ -1,5 +1,6 @@
 import FormPopover from '@/components/form/form-popover';
-import Hint from '@/components/hint';
+import { Hint } from '@/components/hint';
+ 
 import { Skeleton } from '@/components/ui/skeleton';
 import { MAX_FREE_BOARDS } from '@/constants/boards';
 import { db } from '@/lib/db';
@@ -57,12 +58,12 @@ const BoardList = async () => {
                     >
                         <p className='text-sm'>Create new board</p>
                         <span className='text-xs'>{isPro ? 'Unlimited' : `${MAX_FREE_BOARDS - availableCount} remaining`}</span>
-                        <Hint
+                        {/* <Hint
                             sideOffset={40}
                             description='Free Workspaces can have up to 5 open boards. For unlimited boards upgrade this workspace.'
                         >
                             <HelpCircle className='absolute bottom-2 right-2 h-[14px] w-[14px]' />
-                        </Hint>
+                        </Hint> */}
                     </div>
                 </FormPopover>
             </div>
